@@ -1,0 +1,20 @@
+{
+  "name": "iot",
+  "version": "1.0.0",
+  "description": "Jenkins Visual Management",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mmarcais",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jenkins-api": "^0.2.8",
+    "jenkins-status-shaker": "^1.1.1",
+    "philips-hue-api": "file:Z:\\DF\\philips-hue-api",
+    "properties": "^1.2.1"
+  }
+}
