@@ -2,3 +2,6 @@ url: ******/jenkins
 user: ******
 password: ******
 listenInterval: 10000
+job1:job1
+job2:job2
+job3:job3

@@ -14,9 +14,9 @@ module.exports.initJobs = function(jobs, callbackWhenNewInfo){
     if(intervalIdValid != null) clearInterval(intervalIdValid);
     if(intervalIdProd != null) clearInterval(intervalIdProd);
 
-    intervalIdDev = setInterval(function() { listenBuild(jobs.first, '1', callbackWhenNewInfo); }, jenkinsProperties.listenInterval);
-    intervalIdValid = setInterval(function() { listenBuild(jobs.second, '2', callbackWhenNewInfo); }, jenkinsProperties.listenInterval);
-    intervalIdProd = setInterval(function() { listenBuild(jobs.third, '3', callbackWhenNewInfo); }, jenkinsProperties.listenInterval);
+    intervalIdDev = setInterval(function() { listenBuild(jobs.job1, '1', callbackWhenNewInfo); }, jenkinsProperties.listenInterval);
+    intervalIdValid = setInterval(function() { listenBuild(jobs.job2, '2', callbackWhenNewInfo); }, jenkinsProperties.listenInterval);
+    intervalIdProd = setInterval(function() { listenBuild(jobs.job3, '3', callbackWhenNewInfo); }, jenkinsProperties.listenInterval);
 };
 
 function listenBuild(buildName, bulb, callbackWhenNewInfo) {

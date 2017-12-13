@@ -18,9 +18,9 @@ function init() {
 
         jenkinsFunctions.init(jenkinsProperties);
         jenkinsFunctions.initJobs({
-            first: 'backend%20(master)',
-            second: 'front-maven%20(master)',
-            third: 'Dev%20-%20Mise%20%C3%A0%20jour%20de%20l\'environnement%20d\'int%C3%A9gration%20de%20master%20(env-dev-master)'
+            job1: jenkinsProperties.job1,
+            job2: jenkinsProperties.job2,
+            job3: jenkinsProperties.job3
         }, onJenkinsNotification);
     });
 
